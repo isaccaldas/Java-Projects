@@ -32,8 +32,7 @@ public class PalavraThis {
         
     }
     
-    
-    
+        
     public static void main(String[] args) {
         
            PalavraThis p = new PalavraThis();
