@@ -13,7 +13,7 @@ public class Variaveis {
     public static void main(String[] args) {
         
         int numero; //Declarando uma variável
-        int numero2, numero3; //Declarando três variáveis na mesma linha
+        int numero2, numero3; //Declarando duas variáveis na mesma linha
         
         //Inicializando variáveis
         numero = 10;
