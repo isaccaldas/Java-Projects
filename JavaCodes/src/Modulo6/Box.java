@@ -28,12 +28,13 @@ public class Box {
     }
     
     //Construtor com parametros
-    public Box(double w, double h, double d){
+    public Box(double width, double height, double depth){
     
-        width = w;
-        height = h;
-        depth = d;
+        this.width = width;
+        this.height = height;
+        this.depth = depth;
     }
+    
     
     
     //exibe o volume da caixa
