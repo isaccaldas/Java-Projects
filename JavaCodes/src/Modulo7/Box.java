@@ -14,6 +14,14 @@ public class Box {
     double height;
     double depth;
 
+    //construtor usando um objeto como paramentro
+    public Box(Box obj) {
+        this.width = obj.width;
+        this.height = obj.height;
+        this.depth = obj.depth;
+    }
+    
+    
     //construtor usando todas as dimensoes como paramentros 
     public Box(double width, double height, double depth) {
         this.width = width;
@@ -46,6 +54,10 @@ public class Box {
         Box mybox2 = new Box();
         Box mybox3 = new Box(7);
         
+        //Iniciando mybox4 com os mesmos parametros de mybox
+        Box mybox4 = new Box(mybox);
+        
+        
         double vol;
         
         
@@ -57,6 +69,10 @@ public class Box {
         
         vol = mybox3.volume();
         System.out.println("volume de box3 = " + vol);
+        
+        vol = mybox4.volume();
+        System.out.println("volume de box4 = " + vol);
+        
     }
     
     
