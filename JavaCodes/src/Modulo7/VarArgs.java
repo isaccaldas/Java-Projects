@@ -22,7 +22,7 @@ public class VarArgs {
         }
     }//fim vaTest
     
-     static void vaTest(boolean... v){
+    static void vaTest(boolean... v){
     
         System.out.println("Number of args: " + v.length + " Contents: ");
     
@@ -34,11 +34,25 @@ public class VarArgs {
         }
     }//fim vaTest
     
+    static void vaTest(String msg, int... v){
+    
+        System.out.println("Number of args: " + v.length + " Contents: ");
+    
+        for (int x : v) {
+            
+            System.out.print(x + " ");
+            
+            System.out.println();
+        }
+    }//fim vaTest
+    
+     
+     
     
     
     //o varArg deve ser o último parâmetro
     int doIt(int a, int b, double c, int... vals){
-    
+    return 0;
     }
     
     
@@ -49,7 +63,7 @@ public class VarArgs {
         
         vaTest(10);      // 1 argumento
         vaTest(1,2,3);   // 3 argumentos
-        vaTest();        // 0 argumentos
+        //vaTest();        // 0 argumentos
         
     }
 }
