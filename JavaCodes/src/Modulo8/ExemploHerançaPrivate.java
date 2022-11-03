@@ -27,7 +27,7 @@ class Filha extends ExemploHerançaPrivate{
         
         void sum(){
         
-            total = i+j; //Erro j não é acessível aqui pois é privado na classe pai.
+           // total = i+j; //Erro j não é acessível aqui pois é privado na classe pai.
         }
     
     }
