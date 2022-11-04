@@ -7,18 +7,18 @@ package Modulo8;
 public class Sobrescrita {
     
     public static void main(String[] args) {
-         B subOb = new B(1,2,3);
+         B3 subOb = new B3(1,2,3);
         subOb.show();
     }
     
    
 }
 
-class A{
+class A3{
 
     int i, j;
     
-    A(int a, int b){
+    A3(int a, int b){
     
         i = a;
         j = b;
@@ -27,25 +27,25 @@ class A{
     
     void show(){
     
-           System.out.println("Class A");
+           System.out.println("Class A3");
            System.out.println("i and j: " + i + " " + j);
     
     }
 
 }// Fim classe A
 
-class B extends A{
+class B3 extends A3{
 
     int k;
     
-    B(int a, int b, int c){
+    B3(int a, int b, int c){
         super(a,b);
         k = c;
     }
 
     //display k - sobrescreve show() na classe A
     void show(){
-           System.out.println("Class B");
+           System.out.println("Class B3");
            System.out.println("k: " + k);
         
     }

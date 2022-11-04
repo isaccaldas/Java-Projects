@@ -18,7 +18,7 @@ public class CallByValue {
         
         System.out.println("a and b before call: " + a + " " + b);
         
-        ob.meth(a, b);
+        ob.meth2(a, b);
         
         System.out.println("a and b after call: " + a + " " + b);
      
@@ -30,7 +30,7 @@ public class CallByValue {
 class Test{
     
     //Primitivos são passados por valores
-    void meth(int i, int j){
+    void meth2(int i, int j){
         
         i *= 2;
         j /= 2;

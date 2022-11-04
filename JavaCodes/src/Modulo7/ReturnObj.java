@@ -12,8 +12,8 @@ public class ReturnObj {
    
     public static void main(String[] args) {
         
-        Test ob1 = new Test(2);
-        Test ob2;
+        Test6 ob1 = new Test6(2);
+        Test6 ob2;
         
         ob2 = ob1.incrByTen();
         
@@ -28,21 +28,21 @@ public class ReturnObj {
     
 }// fim ReturnObj
 
-class Test{
+class Test6{
     
     int a;
     
     //Construtor
-    Test(int i){
+    Test6(int i){
     
         a = i;
     
     }
     
     //método que retorna um objeto do tipo Test
-    Test incrByTen(){
+    Test6 incrByTen(){
         
-        Test temp = new Test(a + 10);
+        Test6 temp = new Test6(a + 10);
         return temp;
     }
 

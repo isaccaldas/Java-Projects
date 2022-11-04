@@ -11,19 +11,19 @@ package Modulo7;
 public class OverloadDemo2 {
     
     
-     void test(){
+     void test2(){
         
         System.out.println("Sem parametros");
     }
       
     //sobrecarga(overload) do método adicionando dois parametros inteiros
-    void test(int a, int b){
+    void test2(int a, int b){
         
         System.out.println("a and b: " + a + " " + b);
     }
     
     //sobrecarga(overload) do método adicionando um parametro double
-    void test(double a){
+    void test2(double a){
         
         System.out.println("a: " + a );
         System.out.println("(double) a " + a);
@@ -41,10 +41,10 @@ class Overload{
         
         //Fazendo a chamada a todas as versões de test
         
-        db.test();
-        db.test(10,20);
-        db.test(i);
-        db.test(123.25);
+        db.test2();
+        db.test2(10,20);
+        db.test2(i);
+        db.test2(123.25);
         
     }
 

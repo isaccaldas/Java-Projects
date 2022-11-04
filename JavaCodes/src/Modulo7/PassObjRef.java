@@ -12,11 +12,11 @@ public class PassObjRef {
     
     public static void main(String[] args) {
         
-        Test ob = new Test(15, 20);
+        Test5 ob = new Test5(15, 20);
         
         System.out.println("ob.a and ob.b before call: " + ob.a + " " + ob.b);
         
-        ob.meth(ob);
+        ob.meth5(ob);
         
         System.out.println("ob.a and ob.b after call: " + ob.a + " " + ob.b);
         
@@ -26,11 +26,11 @@ public class PassObjRef {
     
 }//fim class PassObjRef
 
-class Test{
+class Test5{
     
     int a, b;
     
-    Test(int i, int j){
+    Test5(int i, int j){
         
         a = i;
         b = j;
@@ -39,7 +39,7 @@ class Test{
     
     
     //Passando um objeto
-    void meth(Test o){
+    void meth5(Test5 o){
         
          o.a *= 2;
          o.b /= 2;
